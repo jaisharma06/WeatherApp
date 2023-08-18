@@ -32,7 +32,7 @@ Name - Jai Prakash</br>
 Email - [jai.sharma06@live.com](mailto:jai.sharma06@live.com)</br>
 Phone - +91-8447490922
 
-*Build Link - [WeathrApp](https://github.com/jaisharma06/WeatherApp/raw/master/Builds/Android/WeatherApp.apk)*
+*Build Link - [WeatherApp](https://github.com/jaisharma06/WeatherApp/raw/master/Builds/Android/WeatherApp.apk)*
 </br>*Package Link(Custom Toast) - [CustomToast](https://github.com/jaisharma06/WeatherApp/raw/master/Builds/Packages/CustomToast.unitypackage)*
 </br>*Package Link(Native Toast) - [NativeToast](https://github.com/jaisharma06/WeatherApp/raw/master/Builds/Packages/NativeToast.unitypackage)*
 
