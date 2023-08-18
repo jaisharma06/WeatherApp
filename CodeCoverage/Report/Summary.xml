@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageReport scope="Summary">
+  <Summary>
+    <Generatedon>18-08-2023 - 19:37:10</Generatedon>
+    <Parser>OpenCoverParser</Parser>
+    <Assemblies>5</Assemblies>
+    <Classes>29</Classes>
+    <Files>27</Files>
+    <Coveredlines>39</Coveredlines>
+    <Uncoveredlines>1299</Uncoveredlines>
+    <Coverablelines>1338</Coverablelines>
+    <Totallines>2601</Totallines>
+    <Linecoverage>2.9</Linecoverage>
+    <Coveredbranches>0</Coveredbranches>
+    <Totalbranches>0</Totalbranches>
+  </Summary>
+  <Coverage>
+    <Assembly name="GameAssembly" classes="7" coverage="16.9" coveredlines="22" coverablelines="130" totallines="457" branchcoverage="" coveredbranches="0" totalbranches="0">
+      <Class name="WeatherApp.Entities.Daily" coverage="0" coveredlines="0" coverablelines="3" totallines="61" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="WeatherApp.Entities.DailyUnits" coverage="0" coveredlines="0" coverablelines="3" totallines="61" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="WeatherApp.Entities.WeatherData" coverage="0" coveredlines="0" coverablelines="3" totallines="61" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="WeatherApp.Location" coverage="38.4" coveredlines="5" coverablelines="13" totallines="25" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="WeatherApp.LocationManager" coverage="16.6" coveredlines="6" coverablelines="36" totallines="111" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="WeatherApp.Network.APIFetcher" coverage="100" coveredlines="7" coverablelines="7" totallines="25" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="WeatherApp.WeatherManager" coverage="6.1" coveredlines="4" coverablelines="65" totallines="113" branchcoverage="" coveredbranches="0" totalbranches="0" />
+    </Assembly>
+    <Assembly name="NativeToastAssembly" classes="2" coverage="0" coveredlines="0" coverablelines="24" totallines="80" branchcoverage="" coveredbranches="0" totalbranches="0">
+      <Class name="Toast.NativeToast" coverage="0" coveredlines="0" coverablelines="21" totallines="68" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="Toast.ToastTest" coverage="0" coveredlines="0" coverablelines="3" totallines="12" branchcoverage="" coveredbranches="0" totalbranches="0" />
+    </Assembly>
+    <Assembly name="Tests" classes="1" coverage="73.9" coveredlines="17" coverablelines="23" totallines="46" branchcoverage="" coveredbranches="0" totalbranches="0">
+      <Class name="TestScript" coverage="73.9" coveredlines="17" coverablelines="23" totallines="46" branchcoverage="" coveredbranches="0" totalbranches="0" />
+    </Assembly>
+    <Assembly name="Unity.TestTools.CodeCoverage.Sample.Asteroids" classes="12" coverage="0" coveredlines="0" coverablelines="432" totallines="701" branchcoverage="" coveredbranches="0" totalbranches="0">
+      <Class name="AnimatorDisabler" coverage="0" coveredlines="0" coverablelines="4" totallines="11" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="AsteroidController" coverage="0" coveredlines="0" coverablelines="39" totallines="62" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="BaseProjectile" coverage="0" coveredlines="0" coverablelines="11" totallines="20" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="DebrisController" coverage="0" coveredlines="0" coverablelines="19" totallines="31" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="EngineTrail" coverage="0" coveredlines="0" coverablelines="17" totallines="32" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="GameManager" coverage="0" coveredlines="0" coverablelines="98" totallines="161" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="InGameMenuController" coverage="0" coveredlines="0" coverablelines="15" totallines="29" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="LaserController" coverage="0" coveredlines="0" coverablelines="23" totallines="36" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="LifeCounter" coverage="0" coveredlines="0" coverablelines="42" totallines="63" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="ProjectileController" coverage="0" coveredlines="0" coverablelines="17" totallines="30" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="ScoreCounter" coverage="0" coveredlines="0" coverablelines="54" totallines="83" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="SpaceshipController" coverage="0" coveredlines="0" coverablelines="93" totallines="143" branchcoverage="" coveredbranches="0" totalbranches="0" />
+    </Assembly>
+    <Assembly name="Unity.TestTools.CodeCoverage.Sample.Asteroids.Tests" classes="7" coverage="0" coveredlines="0" coverablelines="729" totallines="1439" branchcoverage="" coveredbranches="0" totalbranches="0">
+      <Class name="AsteroidTests" coverage="0" coveredlines="0" coverablelines="162" totallines="266" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="CameraTests" coverage="0" coveredlines="0" coverablelines="19" totallines="50" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="FXTests" coverage="0" coveredlines="0" coverablelines="60" totallines="105" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="GameManagerTests" coverage="0" coveredlines="0" coverablelines="155" totallines="259" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="SpaceshipTests" coverage="0" coveredlines="0" coverablelines="187" totallines="302" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="UserInterfaceTests" coverage="0" coveredlines="0" coverablelines="131" totallines="219" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="WeaponTests" coverage="0" coveredlines="0" coverablelines="15" totallines="238" branchcoverage="" coveredbranches="0" totalbranches="0" />
+    </Assembly>
+  </Coverage>
+</CoverageReport>
