@@ -16,6 +16,7 @@ namespace WeatherApp
         [SerializeField] private bool m_showCustomToast = true;
 
         private LocationManager _locationManager;
+        private LocationFetcher _locationFetcher;
         private APIFetcher _apiFetcher;
 
         private void Awake()
@@ -36,7 +37,7 @@ namespace WeatherApp
 #if UNITY_EDITOR
         private void Start()
         {
-            LocationFetchedSuccessfully(new Location(19.125f, 72.875f));
+            //LocationFetchedSuccessfully(new Location(19.125f, 72.875f));
         }
 #endif
 
@@ -44,6 +45,7 @@ namespace WeatherApp
         {
             _locationManager = new LocationManager();
             _apiFetcher = new APIFetcher();
+            _locationFetcher = new LocationFetcher();
             m_loadingScreen.SetActive(false);
         }
 
@@ -51,19 +53,29 @@ namespace WeatherApp
         {
             _locationManager.onLocationFetchSuccessful += LocationFetchedSuccessfully;
             _locationManager.onLocationFetchFailure += LocationFetchFailed;
+            _locationFetcher.onLocationFetched += LocationFetchedSuccessfully;
             _apiFetcher.onApiFetchSuccessful += WeatherFetchedSuccessfully;
+            _apiFetcher.onApiFetchFailed += APIFetchFailed;
         }
 
         private void DeregisterEvents()
         {
             _locationManager.onLocationFetchSuccessful -= LocationFetchedSuccessfully;
             _locationManager.onLocationFetchFailure -= LocationFetchFailed;
+            _locationFetcher.onLocationFetched -= LocationFetchedSuccessfully;
             _apiFetcher.onApiFetchSuccessful -= WeatherFetchedSuccessfully;
+            _apiFetcher.onApiFetchFailed -= APIFetchFailed;
         }
 
         private void LocationFetchedSuccessfully(Location location)
         {
             var url = $"{m_baseUrl}?latitude={location.latitude}&longitude={location.longitude}&timezone=IST&daily=temperature_2m_max";
+            _apiFetcher.Get(url);
+        }
+
+        private void LocationFetchedSuccessfully(LocationEntity location)
+        {
+            var url = $"{m_baseUrl}?latitude={location.lat}&longitude={location.lon}&timezone=IST&daily=temperature_2m_max";
             _apiFetcher.Get(url);
         }
 
@@ -90,11 +102,18 @@ namespace WeatherApp
             m_loadingScreen.SetActive(false);
         }
 
+        private void APIFetchFailed(string errorMessage)
+        {
+            Debug.Log(errorMessage);
+            ShowCustomToast($"{errorMessage}");
+        }
+
         #region UIActions
         public void OnClickGetLocation()
         {
             m_loadingScreen.SetActive(true);
-            _locationManager.GetLocation();
+            //_locationManager.GetLocation();
+            _locationFetcher.GetLocation();
         }
 
         private void ShowNativeToast(string message)
